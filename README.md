@@ -79,8 +79,6 @@ Methods:
 	get_package(packagename: str)
 		Returns a package dict given a packages name, returns noe if nothing is found
 
-	def sort(self):
-		INTERNAL, sorts packages by category
 Attributes:
 	parser.all = [] #All homebrew, rest are pretty self-explanatory
 	parser.advanced = []
@@ -96,37 +94,37 @@ Attributes:
 ### ext_parser (object):
 ```
 Methods:
-	get_package_by_title(self, title: str):
+	get_package_by_title(self, title: str)
 		returns package dict when passed package title, you should avoid using this.
 
-	get_list_of_packages_by_list_of_package_names(self, package_names: list):
+	get_list_of_packages_by_list_of_package_names(self, package_names: list)
 		returns a list of package dicts when passed a list of package names
 
-	get_list_of_packages_by_category(self, category: str):
+	get_list_of_packages_by_category(self, category: str)
 		returns a list of package dicts when passed a category string
 
-	get_list_of_packages_by_list_of_categories(self, categories_list: list):
+	get_list_of_packages_by_list_of_categories(self, categories_list: list)
 		returns a list of package dicts when passed a list of category strings
 
-	get_list_of_packages_by_author(self, package_author: str):
+	get_list_of_packages_by_author(self, package_author: str)
 		returns a list of package dicts when passed an author string
 
-	get_list_of_packages_by_list_of_authors(self, package_authors: list):
+	get_list_of_packages_by_list_of_authors(self, package_authors: list)
 		returns a list of package dicts when passed a list of author strings
 
-	get_packages_list_sorted_by_updated(self, list_reversed: bool = False):
+	get_packages_list_sorted_by_updated(self, list_reversed: bool = False)
 		returns a list of all packages sorted by when they were last updated
 
-	get_packages_list_sorted_by_size(self, list_reversed: bool = False):
+	get_packages_list_sorted_by_size(self, list_reversed: bool = False)
 		returns a list of all packages sorted by when they were last updated
 
-	get_packages_list_sorted_by_app_dls(self, list_reversed: bool = False):
+	get_packages_list_sorted_by_app_dls(self, list_reversed: bool = False)
 		returns a list of all packages sorted by app dls
 
-	get_packages_list_sorted_by_web_dls(self, list_reversed: bool = False):
+	get_packages_list_sorted_by_web_dls(self, list_reversed: bool = False)
 		returns a list of all packages sorted by app dls
 
-	get_list_of_packages_with_binaries(self, packages_list: list = False):
+	get_list_of_packages_with_binaries(self, packages_list: list = False)
 		returns a list of all packages with binaries
 ```
 

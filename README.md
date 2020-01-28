@@ -1,14 +1,16 @@
+
+# appstore-py
 WIP lib for interacting with appstore/libget content
 
 
-##OBJECTS/MODULES:
+## OBJECTS/MODULES:
 - appstore_handler - tool for interacting with SD card content
 - parser - tool for parsing the appstore team's switch repo
 - ext_parser - tool for parsing the appstore team's switch repo, extends parser
 - appstore_web - module for accessing appstore content like icons/packages
 
 
-###appstore_handler (object):
+### appstore_handler (object):
 ```
 Methods:
 	set_path(path: str)
@@ -62,7 +64,7 @@ Attributes:
 		Stores a list of discovered installed packages whenever `get_packages` is called
 ```
 
-###parser (object):
+### parser (object):
 ```
 Methods:
 	clear()
@@ -91,7 +93,7 @@ Attributes:
 	parser.legacy = []
 ```
 
-###ext_parser (object):
+### ext_parser (object):
 ```
 Methods:
 	get_package_by_title(self, title: str):
@@ -128,7 +130,7 @@ Methods:
 		returns a list of all packages with binaries
 ```
 
-###appstore_web (module):
+### appstore_web (module):
 ```
 Functions: 
 	getPackageIcon(package_name: str, force = False)

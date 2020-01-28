@@ -5,6 +5,16 @@ from tkinter import filedialog
 from appstore import getPackage, parser, appstore_handler
 from webhandler import getJson #getJson grabs json file with etagging
 
+print("This is an example of how to use the appstore-py python lib.")
+print("This script inits a downloads folder for the appstore library,")
+print("starts a tkinter window and hides it so we can use the filedialog,")
+print("downloads / loads / parses the appstore team's switch repo json,")
+print("Asks the user where to install the packages to with the filedialog,")
+print("Checks to see if the location has been inited with at `/appstore/.get`,")
+print("If the .get folder hasn't been inited it is initialized")
+print('Finds the packages chosen for installation (atmos and lennytube),')
+print("And installs those packages to the sd.\nHappy hacking!\n")
+
 if not os.path.exists('downloads'):
 	os.mkdir('downloads')
 

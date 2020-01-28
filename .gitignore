@@ -1,0 +1,4 @@
+downloads/*
+log.txt
+details.md
+*.pyc

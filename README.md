@@ -58,7 +58,7 @@ Methods:
 
 Attributes:
 	appstore_handler.base_install_path 
-		#Used internally to store the base path 
+		Used internally to store the working path for the handler
 
 	appstore_handler.packages
 		Stores a list of discovered installed packages whenever `get_packages` is called
